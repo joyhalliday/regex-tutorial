@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Regex Tutorial: Matching an Email
 
-Introductory paragraph (replace this with your text)
+Regular expressions, or regex for short, are a series of special characters that define a search pattern. They may appear inscrutable if you do not know how to read them, but are a good way to create a search pattern. Once you learn to read a recoginize the search pattern, they become much easier to read. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+This tutorial will cover using regular expressions in order to match to an email address. The above code is an example of a regex that would define a search pattern for an email address.
 
 ## Table of Contents
 
@@ -19,7 +21,15 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Regex Components
 
+Required in all regex match types, the expression will be wrapped in slash characters (/)
+
 ### Anchors
+
+The characters (^) and ($) are both considered to be anchors.
+
+The use of the (^) signifies the start of the search characters.
+
+The use of ($) signifies the end of the search characters. 
 
 ### Quantifiers
 
@@ -27,14 +37,24 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Bracket Expressions
 
+Anything inside a set of square brackets ([]) represents a range of characters that we want to match. 
+[a-z0-9_\.-]- this signifies to expect all letters of the alphabet, numbers 0 through 9, as well as the symbols (_), (\), (.), (-). This section will contain the expected values for the first part of the user's email.
+[\da-z\.-]
+[a-z\.]
+
 ### Character Classes
 
 ### The OR Operator
 
+Not applicable to this regex.
+
 ### Flags
+
+Not applicable to this regex. 
 
 ### Character Escapes
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Joy Halliday 
+https://github.com/joyhalliday
