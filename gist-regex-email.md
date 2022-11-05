@@ -1,6 +1,6 @@
 # Regex Tutorial: Matching an Email
 
-Regular expressions, or regex for short, are a series of special characters that define a search pattern. They may appear inscrutable if you do not know how to read them, but are a good way to create a search pattern. Once you learn to read a recoginize the search pattern, they become much easier to read. 
+Regular expressions, or regex for short, are a series of special characters that define a search pattern. They may appear inscrutable if you do not know how to read them, but are a good way to create a search pattern. Once you learn to read and recognize the search pattern, they become much easier to read. 
 
 ## Summary
 
@@ -39,7 +39,7 @@ Quantifiers exist outside of the brackets and exist as limits for the string.
 For this example, the plus signifies that the characters within the brackets on either side of the (@) symbol in the email
 
 ({}) Provide ways to set limits
-For this example, it expects the preceeding string to be between 2 and 6 matchng characters in length and will expect the final part of the email address (.com, .net, etc)
+For this example, it expects the preceding string to be between 2 and 6 matching characters in length and will expect the final part of the email address (.com, .net, etc)
 
 ### Grouping Constructs
 
@@ -54,7 +54,7 @@ Anything inside a set of square brackets ([]) represents a range of characters t
 
 ### Character Classes
 
-Ths defines a set of characters which can be used to create an input match. 
+This defines a set of characters which can be used to create an input match. 
 
 For example, in the expression [\da-z\.-], the (\d) is used as a shorthand to include numbers 0-9 while using up less space in the expression.
 
@@ -68,7 +68,7 @@ Not applicable to this regex.
 
 ### Character Escapes
 
-Makes use of the (\) character to signify that the following character should not be used literally. 
+Makes use of the ('\') character to signify that the following character should not be used literally. 
 
 ## Author
 
